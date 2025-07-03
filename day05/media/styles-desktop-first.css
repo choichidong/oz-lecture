@@ -1,0 +1,47 @@
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* header {
+  text-align: center;
+  padding: 32px;
+  background-color: lightblue;
+} */
+h1 {
+  text-align: center;
+  padding: 2rem;
+  background-color: lightblue;
+}
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.box {
+  padding: 1rem;
+  background-color: lightcoral;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* 테블릿: 768px 이상 */
+@media screen and (min-width: 768px) {
+  .box {
+    width: calc(50% - 8px);
+  }
+}
+/* 모바일 */
+@media (min-width: 767px) {
+  .box {
+    width: calc(33.33% - 20px);
+  }
+}
+@media (min-resolution: 2dppx) {
+  .box {
+    background-image: url("high-res-bg.jpg");
+    background-size: cover;
+  }
+}

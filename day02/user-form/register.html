@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            User Registration Form
+        </title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div>
+                <h3>사용자 이름을 작성 해주세요</h3>
+                    <!-- <input type="text" name="username" placeholder="사용자 이름" > -->
+                   <label for="name">사용자 이름:</label> 
+                   <input type="text" id="name" name="name" placeholder="사용자 이름" required>
+            </div>
+            <br>
+            <div>
+                <h3>사용자의 이메일 주소를 작성 해주세요</h3>
+                    <!-- <input type="email" name="email" placeholder="사용자의 이메일 주소" >    -->
+                    <label for="email">이메일:</label> 
+                    <input type="email" id="email" name="email" placeholder="사용자의 이메일 주소" required>
+            </div>
+            <br>
+            <div>
+                <h3>사용자의 비밀번호를 작성해 주세요</h3>
+                    <!-- <input type="password" name="password" placeholder="비밀번호" > -->
+                    <label for="password">비밀번호:</label> 
+                    <input type="password" id="password" name="password" placeholder="비밀번호" required>
+            </div>
+            <br>
+            <div>
+                <h3>사용자 생년월일을 작성해 해주세요</h3>
+                    <!-- <input type="date" name="birthdate" placeholder="생년월일" > -->
+                    <label for="date">생년월일:</label> 
+                    <input type="date" id="birthdate" name="birthdate">
+            </div>
+            <br>
+            <div>
+                <h3>사용자 나이를 선택 해주세요</h3>
+                    <!-- <input type="number" name="age" min="18" max="100" > -->
+                    <label for="number">나이:</label> 
+                    <input type="number" id="age" name="age" min="18" max="100" placeholder="나이" required>
+            </div>
+            <br>
+            <div>
+                <h3>사용자 서비스 만족도를 체크 해주세요</h3>
+                    <!-- <input type="range" name="volume" min="1" max="10" > -->
+                    <label for="range">서비스 만족도:</label> 
+                    <input type="range" id="volume" name="volume" min="1" max="10" >
+            </div>
+            <br>
+            <div>
+                <h3>사용자 성별을 선택 해주세요</h3>
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">남성</label>
+                    <input type="radio" name="gender" value="female">
+                    <label for="female">여성</label>
+                    <input type="radio" name="gender" value="other">
+                    <label for="other">다른</label>
+            </div>
+            <br>
+            <div>
+                <h3>사용자 관심사를 체크 해주세요</h3>
+                    <input type="checkbox" name="hobby" value="coding">
+                    <label for="coding">코딩</label>
+                    <input type="checkbox" name="hobby" value="gaming">
+                    <label for="gaming">게임</label>
+                    <input type="checkbox" name="hobby" value="reading">
+                    <label for="reading">독서</label>
+            </div>
+            <br>
+            <div>
+                <h3>사용자 국가를 선택해주세요</h3>
+                <select name="city" multiple>
+                    <option value="South Korea">한국</option>
+                    <option value="USA">미국</option>
+                    <option value="Japan">일본</option>
+                    <option value="China">중국</option>
+                    <option value="UK">영국</option>
+                </select>
+            </div>
+            <hr/>
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button>
+        </form>      
+  </body>
+</html>

@@ -1,12 +1,22 @@
-const MAX_SCORE = 100;
-let input = prompt("점수를 입력하세요 (0~100):");
-let score = Number(input);
+// 사용자 입력
+let inputStr = prompt("점수를 입력하세요.");
+console.log(inputStr);
+let input = parseInt(inputStr);
+console.log(input);
+
+const MAX_SCORE = 105;
+let score;
 var grade;
 
-if (isNaN(score) || score < 0 || score > 100) {
+// 최종점수 계산 (5점 추가)
+
+score = input;
+score += 5;
+
+// 등급 결정 (if문)
+if (isNaN(input) || input < 0 || input > 100) {
   console.log("잘못된 입력입니다. 0부터 100 사이의 숫자를 입력하세요.");
 } else {
-  score += 5;
   if (score > MAX_SCORE) score = MAX_SCORE;
 
   if (score >= 100) {
@@ -23,12 +33,14 @@ if (isNaN(score) || score < 0 || score > 100) {
     grade = "F";
   }
 
+  // 합격/불합격 여부 결정 (삼항연산자)
   let status = score >= 60 ? "Pass" : "Fail";
 
   console.log("Final Score: " + score);
   console.log("Grade: " + grade);
   console.log("Status: " + status);
 
+  // 등급에 따른 console.log() 출력 (switch문)
   switch (grade) {
     case "S":
       console.log("Message: Super!!");

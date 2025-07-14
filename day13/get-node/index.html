@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day13 get-node</title>
+  </head>
+    <h1 id="title">title</h1>
+    <p class="test">test-1</p>
+    <p class="test">test-2</p>
+    <input type="email" name="email"></input>
+    <body>
+  <script>
+    // const el = docment.getElementById("tetle");
+    // console.log(el);
+    const el = document.getElementById("title"); // el == element
+    console.log(el);
+    console.log(typeof el);
+
+    // const classEl = document.gotElementByClassName("text");
+    // console.log(classEl);
+
+    const classEl = document.getElementsByClassName("text");
+    console.log(classEl);
+    console.log(classEl[0]);
+    console.log(classEl[1]);
+
+    const nameEls = document.getElementsByName("mail");
+    console.log(nameEls);
+
+    const tagEls = document.getElementsByTagName("p");
+    console.log(tagEls);
+  </script>
+</body>
+</html>

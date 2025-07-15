@@ -1,0 +1,71 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 700;
+}
+
+#timerInput {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#startTimer {
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  border-radius: 8px;
+}
+
+#timerDisplay {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.error {
+  color: #ff3b3b;
+  animation: shake 0.3s ease-in-out 2;
+}
+
+/* 에러 메시지 흔들리는 애니메이션 */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
